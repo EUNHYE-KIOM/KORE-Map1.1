@@ -16,3 +16,5 @@ FastQC      v0.11.9
 Trim Galore v0.6.6
 STAR        v2.7.3a
 RSEM        v1.3.3
+reference   GRCH38 (Ensembl Release 84)
+annotation  Homo_sapiens.GRCH.38.84.gtf
