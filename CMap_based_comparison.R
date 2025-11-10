@@ -69,6 +69,10 @@ for( i in 1:nrow(comp)){
 
 }
 names(degl)=comp$case
+
+save(degl, ginfo, sin, comp,
+     file=sprintf("%s/RNAseq_4cell_Wortmannin_Vehicle_DESeq_degl.Rdata", dir),
+     version=2)
 #######################################################################
 ### Get CMap data from the public repository (https://clue.io/data/CMap2020#)
 #######################################################################
@@ -213,5 +217,6 @@ for( i in 1:3){
 
 
 }
+
 
 
