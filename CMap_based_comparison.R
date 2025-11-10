@@ -28,7 +28,7 @@ gannot=gannot[gsidx,]
 #######################################################################
 ### KIOM - Wortmannin DEG analysis
 #######################################################################
-load( file=sprintf("%s/RNAseq2023_4cell_Wortmannin_Vehicle_RSEM_results.Rdata",dir) ) #rcm, sin, ginfo
+load( file=sprintf("%s/RNAseq_4cell_Wortmannin_Vehicle_RSEM_results.Rdata",dir) ) #rcm, sin, ginfo
 sin$Dose[is.na(sin$Dose)]=""
 sin$Group=apply(sin[,c(5,6,3,12)],1,paste,collapse="-")
 sin$Label=apply(sin[,c(5,6,3,12,4)],1,paste,collapse="-")
@@ -151,7 +151,7 @@ rownames(cmap_pesm)= names(gl)
 #####################################################################
 ### KIOM - Pathway enrichment score calculation
 #####################################################################
-load(file=sprintf("%s/RNAseq2023_4cell_Wortmannin_Vehicle_DESeq_degl.Rdata",dir) ) #degl,ginfo,sin,comp
+load(file=sprintf("%s/RNAseq_4cell_Wortmannin_Vehicle_DESeq_degl.Rdata",dir) ) #degl,ginfo,sin,comp
 
 resl=lapply(1:length(degl),function(i){
 	print(i)
@@ -213,4 +213,5 @@ for( i in 1:3){
 
 
 }
+
 
