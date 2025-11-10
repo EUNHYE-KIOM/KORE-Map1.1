@@ -10,6 +10,9 @@ Parses STAR Log.final.out files to summarize mapping statistics (input reads, un
 # UMAP_clustering_code.R
 Performs UMAP-based visualization for batch-effect assessment using expression matrix input.
 
+# CMap_based_comparison.R
+Performs CMap-based comparative transcriptomic analysis between RNA-seq data and public Connectivity Map (CMap) profiles.
+
 
 # Software Versions
 FastQC      v0.11.9
