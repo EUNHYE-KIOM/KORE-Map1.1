@@ -12,6 +12,7 @@ Performs UMAP-based visualization for batch-effect assessment using expression m
 
 # CMap_based_comparison.R
 Performs CMap-based comparative transcriptomic analysis between RNA-seq data and public Connectivity Map (CMap) profiles.
+additional data : 20230719_Repurposing_Hub_export.txt , RNAseq2023_4cell_Wortmannin_Vehicle_RSEM_results.Rdata
 
 
 # Software Versions
